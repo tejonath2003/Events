@@ -1,0 +1,66 @@
+*{
+padding: 0 ;
+margin:0;
+box-sizing:border-box;
+
+}
+.main{
+    height: 765px;
+    width:100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),url("er.jpeg") ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+text-align: center;
+font-size: 50px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: aliceblue;
+padding-top: 300px;
+}
+.bar{
+    height:50px;
+    width:100%;
+    background-color: black;
+   padding-top: 10px;
+   position: fixed;
+   
+}
+
+
+.bar >ul {
+    font-size: 20px;
+display: flex;
+justify-content:space-evenly;
+text-decoration: none;
+margin: 0px;
+}
+.bar >ul >a{
+    padding-left: 30px;
+    list-style-type:none;
+    text-decoration: none;
+    color: aqua;
+    display: inline-block;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: 25px;
+}
+.bar ul a::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: white;
+    position: absolute;
+    left:20px;
+    bottom: 0;
+    transition: transform 0.25s ease-in;
+    transform-origin: right;
+    transform:scaleX(0);
+}
+
+.bar ul a:hover:after {
+    
+    transform:scaleX(1);
+    transform-origin: left;
+
+}
